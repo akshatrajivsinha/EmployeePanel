@@ -1,0 +1,26 @@
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Topbar from "./components/topbar/Topbar"
+import Login from "./pages/login/Login";
+import Register from "./pages/register/Register";
+import Home from "./pages/home/Home";
+import Create from "./pages/create/Create";
+import List from "./pages/list/List"
+import Update from "./pages/update/Update"
+
+function App() {
+  return (
+    <Router>
+      <Topbar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/register" element={<Register />} />
+        <Route path="/create" element={<Create />} />
+        <Route path="/list" element={<List />} />
+        <Route path="/update/:id" element={<Update />} />
+      </Routes>
+    </Router>
+  );
+}
+
+export default App;

@@ -1,0 +1,67 @@
+.lists{
+    display: flex;
+    flex-direction: column;
+    height: max-content;
+    gap: 30px;
+    @media screen and (max-width: 600px) {
+        width: 100%;
+      }
+
+
+    .topcontent{
+        display: flex;
+        margin: 10px 60px 0px 10px;
+        flex-direction: column;
+        gap: 30px;
+
+        .h1{
+            font-size: small;
+        }
+
+        .form{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            .input{
+                display: flex;
+                margin: 5px;
+                gap: 10px;
+                .input1{
+                    border: none;
+                    background: transparent;
+                    border-bottom: 2px solid black;
+                }
+                .lable{
+                    font-size: small;
+                    font-family: "Dancing Script", cursive;
+                }
+            }
+            .button{
+                margin: 3px;
+                align-self: center;
+                border: none;
+                border-radius: 10px;
+                background-color: blue;
+                color: white;
+                padding: 5px;
+                cursor: pointer;
+                @media screen and (max-width: 600px) {
+                    padding: 4px;
+                    font-size: small;
+                  }
+            }
+        }
+        
+    }
+    .table{
+        @media screen and (max-width: 600px) {
+            background-color: black;
+          }
+        .th{
+            @media screen and (max-width: 600px) {
+                padding: 2px;
+                font-size: 3.5px;
+              }
+        }
+    }
+}
